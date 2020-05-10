@@ -11,8 +11,8 @@
                 </div>
                 <div id="text-7" class="widget widget-container widget_text">
                     <div class="textwidget">
-                        <div id="seal" style="width:100px; float:right; position:relative;"> <a href="https://seal.godaddy.com/verifySeal?sealID=o0qGOrTH6Z9AOLXOH03T0OI3cpTPAemzFCEx5xPYfFISCPPhxFe9l" target="_blank" rel="noopener noreferrer"><img  alt="256bit Security" src="/wp-content/uploads/2013/07/f-256.png"></a></div>
-                        <div id="thc" style="width:110px;"><a href="https://www.THCbiz.com"><img src="{{ url('/') }}/wp-content/uploads/2013/01/120x60_thc_color.png"  alt="Medical Marijuana Business News" /></a></div>
+                        <div id="seal" style="width:100px; float:right; position:relative;"> <a href="https://seal.godaddy.com/verifySeal?sealID=o0qGOrTH6Z9AOLXOH03T0OI3cpTPAemzFCEx5xPYfFISCPPhxFe9l" target="_blank" rel="noopener noreferrer"><img  alt="256bit Security" src="{{ asset('img/f-256.png') }}"></a></div>
+                        <div id="thc" style="width:110px;"><a href="https://www.THCbiz.com"><img src="{{ asset('img/120x60_thc_color.png') }}"  alt="Medical Marijuana Business News" /></a></div>
                     </div>
                 </div>
                 &nbsp; <!-- spacer -->
