@@ -22,12 +22,12 @@
     <nav id="primary" class="clearfix">
         <div class="margin">
             <h2 id="primarylogo">
-               LOGO HERE
+               logo here
             </h2>
             <ul id="primaryMenu" class="sf-menu primaryMenu">
-                <li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-3525"><a href="{{ url('/') }}" aria-current="page">Home</a></li>
+                <li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom <?php if(Request::path() == '/') echo 'current-menu-item current_page_item'; ?> menu-item-home menu-item-3525"><a href="{{ url('/') }}" aria-current="page">Home</a></li>
                 <li id="menu-item-3527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3527"><a href="{{ url('/') }}/shop/">Shop</a></li>
-                <li id="menu-item-3528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3528"><a href="{{ url('/') }}/wholesale/">Wholesale</a></li>
+                <li id="menu-item-3528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3528 <?php if(Request::path() == 'wholesale') echo 'current-menu-item current_page_item'; ?>"><a href="{{ url('/') }}/wholesale/">Wholesale</a></li>
                 <li id="menu-item-3529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3529"><a href="{{ url('/') }}/faqs/">FAQs</a></li>
                 <li id="menu-item-3530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3530"><a href="{{ url('/') }}/about-us/">About</a></li>
                 <li id="menu-item-3531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3531"><a href="{{ url('/') }}/contact-us/">Contact</a></li>

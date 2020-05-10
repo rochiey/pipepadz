@@ -29,7 +29,7 @@ Toll‌ Free‌ (888)‌·579·4543</span></strong><br>
 <div style="clear:both;"></div>
 
 <div id="FSContact1" style="width:99%; max-width:555px;">
-<form action="https://pipepadz.com/wholesale/#FSContact1" id="fscf_form1" method="post">
+<form action="{{ url('/') }}/wholesale/#FSContact1" id="fscf_form1" method="post">
 
 <div id="fscf_div_clear1_0" style="clear:both;">
   <div id="fscf_div_field1_0" style="clear:left; float:left; width:99%; max-width:550px; margin-right:10px;">
@@ -167,11 +167,11 @@ Toll‌ Free‌ (888)‌·579·4543</span></strong><br>
 <div style="text-align:left; padding-top:5px;">
 </div>
 <div id="fscf_captcha_image_div1" style="width:250px; height:65px; padding-top:2px;">
-      <img id="fscf_captcha_image1" style="border-style:none; margin:0; padding:0px; padding-right:5px; float:left;" src="https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix=W476cHndzz9mfqNK" width="175" height="60" alt="CAPTCHA" title="CAPTCHA">
+      <img id="fscf_captcha_image1" style="border-style:none; margin:0; padding:0px; padding-right:5px; float:left;" src="{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix=W476cHndzz9mfqNK" width="175" height="60" alt="CAPTCHA" title="CAPTCHA">
       <input id="fscf_captcha_prefix1" type="hidden" name="fscf_captcha_prefix1" value="W476cHndzz9mfqNK">
      <div id="fscf_captcha_refresh1">
-        <a href="#" rel="nofollow" title="Refresh" onclick="fscf_captcha_refresh('1','/wp-content/plugins/si-contact-form/captcha','https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix='); return false;">
-        <img src="https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/images/refresh.png" width="22" height="20" alt="Refresh" style="border-style:none; margin:0; padding:0px; vertical-align:bottom;" onclick="this.blur();"></a>
+        <a href="#" rel="nofollow" title="Refresh" onclick="fscf_captcha_refresh('1','/wp-content/plugins/si-contact-form/captcha','{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix='); return false;">
+        <img src="{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/images/refresh.png" width="22" height="20" alt="Refresh" style="border-style:none; margin:0; padding:0px; vertical-align:bottom;" onclick="this.blur();"></a>
 	 </div>
 </div>
 
@@ -226,19 +226,19 @@ Toll‌ Free‌ (888)‌·579·4543</span></strong><br>
    
     		<div id="recent-posts-6" class="widget widget-container widget-sidebar widget_recent_entries">		<h3>Recent Posts</h3>		<ul>
 											<li>
-					<a href="https://pipepadz.com/hempbeach-review/">PIPEPADZ FEATURED ON HEMP BEACH TV</a>
+					<a href="{{ url('/') }}/hempbeach-review/">PIPEPADZ FEATURED ON HEMP BEACH TV</a>
 									</li>
 											<li>
-					<a href="https://pipepadz.com/water-pipe-protection/">THE ULTIMATE WATER PIPE PROTECTION!</a>
+					<a href="{{ url('/') }}/water-pipe-protection/">THE ULTIMATE WATER PIPE PROTECTION!</a>
 									</li>
 											<li>
-					<a href="https://pipepadz.com/protect/">PROTECTING YOUR GLASS</a>
+					<a href="{{ url('/') }}/protect/">PROTECTING YOUR GLASS</a>
 									</li>
 											<li>
-					<a href="https://pipepadz.com/washing-your-pipepadz/">WASHING YOUR PIPEPADZ™</a>
+					<a href="{{ url('/') }}/washing-your-pipepadz/">WASHING YOUR PIPEPADZ™</a>
 									</li>
 											<li>
-					<a href="https://pipepadz.com/bong-protection/">PIPE COASTERS &amp; BONG PROTECTORS</a>
+					<a href="{{ url('/') }}/bong-protection/">PIPE COASTERS &amp; BONG PROTECTORS</a>
 									</li>
 					</ul>
 		</div>  </aside>
