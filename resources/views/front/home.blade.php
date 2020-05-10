@@ -63,7 +63,7 @@
                             </p>
                             <p style="text-align: center;">
                             <p>
-                                <a title="Wholesale Inquiry" href="http://pipepadz.com/wholesale/">
+                                <a title="Wholesale Inquiry" href="{{ url('/') }}/wholesale/">
                             </p>
                             <div class="wholesale_pricing">
                             Wholesale Pricing
