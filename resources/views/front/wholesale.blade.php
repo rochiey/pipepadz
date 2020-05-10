@@ -167,11 +167,11 @@ Toll‌ Free‌ (888)‌·579·4543</span></strong><br>
 <div style="text-align:left; padding-top:5px;">
 </div>
 <div id="fscf_captcha_image_div1" style="width:250px; height:65px; padding-top:2px;">
-      <img id="fscf_captcha_image1" style="border-style:none; margin:0; padding:0px; padding-right:5px; float:left;" src="{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix=W476cHndzz9mfqNK" width="175" height="60" alt="CAPTCHA" title="CAPTCHA">
+      <img id="fscf_captcha_image1" style="border-style:none; margin:0; padding:0px; padding-right:5px; float:left;" src="https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix=W476cHndzz9mfqNK" width="175" height="60" alt="CAPTCHA" title="CAPTCHA">
       <input id="fscf_captcha_prefix1" type="hidden" name="fscf_captcha_prefix1" value="W476cHndzz9mfqNK">
      <div id="fscf_captcha_refresh1">
-        <a href="#" rel="nofollow" title="Refresh" onclick="fscf_captcha_refresh('1','/wp-content/plugins/si-contact-form/captcha','{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix='); return false;">
-        <img src="{{ url('/') }}/wp-content/plugins/si-contact-form/captcha/images/refresh.png" width="22" height="20" alt="Refresh" style="border-style:none; margin:0; padding:0px; vertical-align:bottom;" onclick="this.blur();"></a>
+        <a href="#" rel="nofollow" title="Refresh" onclick="fscf_captcha_refresh('1','/wp-content/plugins/si-contact-form/captcha','https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/securimage_show.php?prefix='); return false;">
+        <img src="https://pipepadz.com/wp-content/plugins/si-contact-form/captcha/images/refresh.png" width="22" height="20" alt="Refresh" style="border-style:none; margin:0; padding:0px; vertical-align:bottom;" onclick="this.blur();"></a>
 	 </div>
 </div>
 
