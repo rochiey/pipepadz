@@ -24,3 +24,7 @@ Route::get('/wholesale', function () {
 Route::get('/shop', function () {
     return view('front.shop');
 });
+
+Route::get('/faqs', function () {
+    return view('front.faqs');
+});
