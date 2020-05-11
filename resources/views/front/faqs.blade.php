@@ -58,7 +58,7 @@
                                                         <div id="qa-faq3" class="qa-faq">
                                                             <h3 class="qa-faq-title"><a class="qa-faq-anchor" href="{{ url('/') }}/faqs/where-to-buy/">Where can I buy PipePadz™?</a></h3>
                                                             <div class="qa-faq-answer">
-                                                                <p>You can purchase PipePadz™ directly from our online store found <a href="http://pipepadz.com/shop">here</a> or visit your local smoke shop.</p>
+                                                                <p>You can purchase PipePadz™ directly from our online store found <a href="{{ url('/') }}/shop">here</a> or visit your local smoke shop.</p>
                                                             </div>
                                                             <!--.qa-faq-answer-->
                                                         </div>
@@ -75,7 +75,7 @@
                                                         <div id="qa-faq5" class="qa-faq">
                                                             <h3 class="qa-faq-title"><a class="qa-faq-anchor" href="{{ url('/') }}/faqs/reseller/">How can I order PipePadz™ for my store?</a></h3>
                                                             <div class="qa-faq-answer">
-                                                                <p>You can add PipePadz™ to your resale lineup by completing the wholesale form <a title="Wholesale Requests" href="http://pipepadz.com/wholesale-requests/">here</a>.</p>
+                                                                <p>You can add PipePadz™ to your resale lineup by completing the wholesale form <a title="Wholesale Requests" href="{{ url('/') }}/wholesale-requests/">here</a>.</p>
                                                             </div>
                                                             <!--.qa-faq-answer-->
                                                         </div>
@@ -83,7 +83,7 @@
                                                         <div id="qa-faq6" class="qa-faq">
                                                             <h3 class="qa-faq-title"><a class="qa-faq-anchor" href="{{ url('/') }}/faqs/free-stickers/">Hey…Can I have some free stickers?</a></h3>
                                                             <div class="qa-faq-answer">
-                                                                <p>Sure! Just send us a quick email <a href="http://pipepadz.com/contact-us/">here</a> with your request and we’ll send some your way.</p>
+                                                                <p>Sure! Just send us a quick email <a href="{{ url('/') }}/contact-us/">here</a> with your request and we’ll send some your way.</p>
                                                             </div>
                                                             <!--.qa-faq-answer-->
                                                         </div>
