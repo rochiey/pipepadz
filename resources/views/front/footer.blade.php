@@ -41,6 +41,7 @@
                             <a href="{{ url('/') }}/shop/product-category/all/3/">3" PipePadz</a><br/>
                             <a href="{{ url('/') }}/shop/product-category/all/4/">4" PipePadz</a><br/>
                             <a href="{{ url('/') }}/shop/product-category/all/4-5/">4.5" PipePadz</a><br/>
+                        </p>
                     </div>
                 </div>
                 &nbsp; <!-- spacer -->
