@@ -482,7 +482,7 @@ ul#topnavmenu li#basketlink a.basket{
 	display: inline-block;
 	*display:inline;
 	*zoom:1;
-	background: url(images/basket.png) no-repeat 10px center;
+	background: url(../img/basket.png) no-repeat 10px center;
 }
 
 ul#topnavmenu li#basketlink:hover a.basket{
