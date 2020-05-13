@@ -28,3 +28,8 @@ Route::get('/shop', function () {
 Route::get('/faqs', function () {
     return view('front.faqs');
 });
+
+Route::get('/about-us', function () {
+    return view('front.about');
+});
+
