@@ -30,7 +30,7 @@
                 <li id="menu-item-3528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3528 <?php if(Request::path() == 'wholesale') echo 'current-menu-item current_page_item'; ?>"><a href="{{ url('/') }}/wholesale/">Wholesale</a></li>
                 <li id="menu-item-3529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3529 <?php if(Request::path() == 'faqs') echo 'current-menu-item current_page_item'; ?>"><a href="{{ url('/') }}/faqs/">FAQs</a></li>
                 <li id="menu-item-3530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3530 <?php if(Request::path() == 'about-us') echo 'current-menu-item current_page_item'; ?>"><a href="{{ url('/') }}/about-us/">About</a></li>
-                <li id="menu-item-3531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3531"><a href="{{ url('/') }}/contact-us/">Contact</a></li>
+                <li id="menu-item-3531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3531 <?php if(Request::path() == 'contact-us') echo 'current-menu-item current_page_item'; ?>"><a href="{{ url('/') }}/contact-us/">Contact</a></li>
             </ul>
         </div>
         <div id="mobile_menu">

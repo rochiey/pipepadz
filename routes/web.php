@@ -40,3 +40,7 @@ Route::get('/privacy-policy', function () {
 Route::get('/terms-conditions', function () {
     return view('front.terms');
 });
+
+Route::get('/contact-us', function () {
+    return view('front.contact');
+});
