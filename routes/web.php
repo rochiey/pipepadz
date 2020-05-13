@@ -37,3 +37,6 @@ Route::get('/privacy-policy', function () {
     return view('front.privacy');
 });
 
+Route::get('/terms-conditions', function () {
+    return view('front.terms');
+});
