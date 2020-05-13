@@ -33,3 +33,7 @@ Route::get('/about-us', function () {
     return view('front.about');
 });
 
+Route::get('/privacy-policy', function () {
+    return view('front.privacy');
+});
+
