@@ -48,3 +48,17 @@ Route::get('/contact-us', function () {
 Route::get('/blog', function () {
     return view('front.blog');
 });
+
+//product category
+Route::get('shop/product-category/3', function () {
+    return view('front.category3');
+});
+Route::get('shop/product-category/4-5', function () {
+    return view('front.blog');
+});
+Route::get('shop/product-category/4', function () {
+    return view('front.blog');
+});
+Route::get('shop/product-category/uncategorized', function () {
+    return view('front.blog');
+});
