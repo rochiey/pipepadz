@@ -22,7 +22,7 @@
     <nav id="primary" class="clearfix">
         <div class="margin">
             <h2 id="primarylogo">
-               logo here
+               <a href="{{ url('/') }}"></a>
             </h2>
             <ul id="primaryMenu" class="sf-menu primaryMenu">
                 <li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom <?php if(Request::path() == '/') echo 'current-menu-item current_page_item'; ?> menu-item-home menu-item-3525"><a href="{{ url('/') }}" aria-current="page">Home</a></li>
