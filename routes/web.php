@@ -54,11 +54,11 @@ Route::get('shop/product-category/3', function () {
     return view('front.category3');
 });
 Route::get('shop/product-category/4-5', function () {
-    return view('front.blog');
+    return view('front.category45');
 });
 Route::get('shop/product-category/4', function () {
-    return view('front.blog');
+    return view('front.category4');
 });
 Route::get('shop/product-category/uncategorized', function () {
-    return view('front.blog');
+    return view('front.uncategorized');
 });
