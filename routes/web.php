@@ -44,3 +44,7 @@ Route::get('/terms-conditions', function () {
 Route::get('/contact-us', function () {
     return view('front.contact');
 });
+
+Route::get('/blog', function () {
+    return view('front.blog');
+});
