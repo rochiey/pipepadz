@@ -47,7 +47,7 @@
 <noscript>
     <link rel="stylesheet" type="text/css" href='{{ asset("css/q-a-plus-noscript.css") }}' />
 </noscript>
-<title><?php if(Request::segment(2) == 'product-category') echo ucwords(str_replace('-', '.', Request::segment(3))).'" '; else echo ucfirst(Request::path()).' | '; ?>PipePadz | Protect Your Glass</title>
+<title><?php if(Request::segment(2) == 'product-category') echo ucwords(str_replace('-', '.', Request::segment(3))).'" '; else if(Request::segment(1) == 'shop') echo ucwords(str_replace('-', ' ', Request::segment(2))).' | '; else echo ucfirst(Request::path()).' | '; ?>PipePadz | Protect Your Glass</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600" rel="stylesheet" type="text/css" />
 
