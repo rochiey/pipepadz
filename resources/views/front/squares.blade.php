@@ -55,7 +55,7 @@
                         </div>
                         <h2 class="woocommerce-loop-product__title">SPIRAL | 4.5″</h2>
                         <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>11.99</span></span>
-                        <a href="/shop/squares/?add-to-cart=1054" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1054" data-product_sku="" aria-label="Add “SPIRAL | 4.5&quot;” to your cart" rel="nofollow">Add to cart</a>
+                        <a href="/shop/squares/?add-to-cart=6" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1054" data-product_sku="" aria-label="Add “SPIRAL | 4.5&quot;” to your cart" rel="nofollow">Add to cart</a>
                      </li>
                      <li class="product type-product post-2272 status-publish instock product_cat-60 product_tag-adhesive-coasters product_tag-bong-coasters product_tag-bong-pad product_tag-bong-pads product_tag-bong-padz product_tag-bong-protection product_tag-bong-protectors product_tag-dab-pads product_tag-dab-padz product_tag-glass-bongs product_tag-hookah-protection product_tag-mmj product_tag-pipe-coaster product_tag-pipe-coasters product_tag-pipe-pads product_tag-pipe-padz product_tag-pipepads product_tag-pipepadz product_tag-water-pipe-coasters product_tag-water-pipe-protection product_tag-water-pipe-protectors product_tag-waterpipe-coasters product_tag-waterpipe-protection has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
                         <a href="{{ url('/') }}/shop/rasta-peace/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
@@ -66,7 +66,7 @@
                         </div>
                         <h2 class="woocommerce-loop-product__title">RASTA PEACE | 4″</h2>
                         <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>9.99</span></span>
-                        <a href="/shop/squares/?add-to-cart=2272" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2272" data-product_sku="" aria-label="Add “RASTA PEACE | 4&quot;” to your cart" rel="nofollow">Add to cart</a>
+                        <a href="/shop/squares/?add-to-cart=4" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2272" data-product_sku="" aria-label="Add “RASTA PEACE | 4&quot;” to your cart" rel="nofollow">Add to cart</a>
                      </li>
                      <li class="product type-product post-2771 status-publish instock product_cat-59 product_tag-adhesive-coasters product_tag-bong-coasters product_tag-bong-pad product_tag-bong-pads product_tag-bong-padz product_tag-bong-protection product_tag-bong-protectors product_tag-dab-pads product_tag-dab-padz product_tag-glass-bongs product_tag-hookah-protection product_tag-mmj product_tag-pipe-coaster product_tag-pipe-coasters product_tag-pipe-pads product_tag-pipe-padz product_tag-pipepads product_tag-pipepadz product_tag-water-pipe-coasters product_tag-water-pipe-protection product_tag-water-pipe-protectors product_tag-waterpipe-coasters product_tag-waterpipe-protection has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
                         <a href="{{ url('/') }}/shop/lime/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
@@ -77,7 +77,7 @@
                         </div>
                         <h2 class="woocommerce-loop-product__title">LIME | 3″</h2>
                         <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7.99</span></span>
-                        <a href="/shop/squares/?add-to-cart=2771" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2771" data-product_sku="" aria-label="Add “LIME | 3&quot;” to your cart" rel="nofollow">Add to cart</a>
+                        <a href="/shop/squares/?add-to-cart=2" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2771" data-product_sku="" aria-label="Add “LIME | 3&quot;” to your cart" rel="nofollow">Add to cart</a>
                      </li>
                      <li class="product type-product post-1046 status-publish last instock product_cat-59 product_tag-adhesive-coasters product_tag-bong-coasters product_tag-bong-pad product_tag-bong-pads product_tag-bong-padz product_tag-bong-protection product_tag-bong-protectors product_tag-dab-pads product_tag-dab-padz product_tag-glass-bongs product_tag-hookah-protection product_tag-mmj product_tag-pipe-coaster product_tag-pipe-coasters product_tag-pipe-pads product_tag-pipe-padz product_tag-pipepads product_tag-pipepadz product_tag-water-pipe-coasters product_tag-water-pipe-protection product_tag-water-pipe-protectors product_tag-waterpipe-coasters product_tag-waterpipe-protection has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
                         <a href="{{ url('/') }}/shop/nautical-star/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
@@ -88,7 +88,7 @@
                         </div>
                         <h2 class="woocommerce-loop-product__title">NAUTICAL STAR | 3″</h2>
                         <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7.99</span></span>
-                        <a href="/shop/squares/?add-to-cart=1046" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1046" data-product_sku="" aria-label="Add “NAUTICAL STAR | 3&quot;” to your cart" rel="nofollow">Add to cart</a>
+                        <a href="/shop/squares/?add-to-cart=1" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1046" data-product_sku="" aria-label="Add “NAUTICAL STAR | 3&quot;” to your cart" rel="nofollow">Add to cart</a>
                      </li>
                   </ul>
                </section>
