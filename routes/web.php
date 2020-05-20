@@ -77,3 +77,6 @@ Route::get('shop/rasta-peace', function () {
 Route::get('shop/eyeball', function () {
     return view('front.eyeball');
 });
+Route::get('shop/spiral', function () {
+    return view('front.spiral');
+});
