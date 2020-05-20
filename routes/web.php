@@ -68,3 +68,6 @@ Route::get('shop/nautical-star', function () {
 Route::get('shop/lime', function () {
     return view('front.lime');
 });
+Route::get('shop/squares', function () {
+    return view('front.squares');
+});
