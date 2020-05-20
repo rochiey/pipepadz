@@ -74,3 +74,6 @@ Route::get('shop/squares', function () {
 Route::get('shop/rasta-peace', function () {
     return view('front.rasta');
 });
+Route::get('shop/eyeball', function () {
+    return view('front.eyeball');
+});
