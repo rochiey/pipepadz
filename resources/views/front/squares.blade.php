@@ -58,10 +58,10 @@
                         <a href="/shop/squares/?add-to-cart=1054" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1054" data-product_sku="" aria-label="Add “SPIRAL | 4.5&quot;” to your cart" rel="nofollow">Add to cart</a>
                      </li>
                      <li class="product type-product post-2272 status-publish instock product_cat-60 product_tag-adhesive-coasters product_tag-bong-coasters product_tag-bong-pad product_tag-bong-pads product_tag-bong-padz product_tag-bong-protection product_tag-bong-protectors product_tag-dab-pads product_tag-dab-padz product_tag-glass-bongs product_tag-hookah-protection product_tag-mmj product_tag-pipe-coaster product_tag-pipe-coasters product_tag-pipe-pads product_tag-pipe-padz product_tag-pipepads product_tag-pipepadz product_tag-water-pipe-coasters product_tag-water-pipe-protection product_tag-water-pipe-protectors product_tag-waterpipe-coasters product_tag-waterpipe-protection has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
-                        <a href="{{ url('/') }}/shop/peace/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                        <a href="{{ url('/') }}/shop/rasta-peace/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                         </a>
-                        <div class="product-image-box"><a href="{{ url('/') }}/shop/peace/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                           </a><a href="{{ url('/') }}/shop/peace/">
+                        <div class="product-image-box"><a href="{{ url('/') }}/shop/rasta-peace/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                           </a><a href="{{ url('/') }}/shop/rasta-peace/">
                            <img src="{{ asset('img/Rasta-Peace-PipePad-Water-Pipe-Protection-e1365559801450-150x149.jpg') }}" alt="Rasta-Peace-PipePad-Water-Pipe-Protection" class="attachment-shop_catalog " width="150" height="149"></a>
                         </div>
                         <h2 class="woocommerce-loop-product__title">RASTA PEACE | 4″</h2>
@@ -72,7 +72,7 @@
                         <a href="{{ url('/') }}/shop/lime/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                         </a>
                         <div class="product-image-box"><a href="{{ url('/') }}/shop/lime/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                           </a><a href="{{ url('/') }}/shop/lime-3/">
+                           </a><a href="{{ url('/') }}/shop/lime/">
                            <img src="{{ asset('img/Sticky-Lime-Pipe-Protection-150x150.jpg') }}" alt="Removable &amp; Reusable Lime Bong Protector" class="attachment-shop_catalog " width="150" height="150"></a>
                         </div>
                         <h2 class="woocommerce-loop-product__title">LIME | 3″</h2>
