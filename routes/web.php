@@ -71,3 +71,6 @@ Route::get('shop/lime', function () {
 Route::get('shop/squares', function () {
     return view('front.squares');
 });
+Route::get('shop/rasta-peace', function () {
+    return view('front.rasta');
+});
