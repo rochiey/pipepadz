@@ -65,3 +65,6 @@ Route::get('shop/product-category/uncategorized', function () {
 Route::get('shop/nautical-star', function () {
     return view('front.nautical_star');
 });
+Route::get('shop/lime', function () {
+    return view('front.lime');
+});
