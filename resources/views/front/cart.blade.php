@@ -41,7 +41,7 @@
 			                                    <td class="product-quantity" data-title="Quantity">
 			                                       <div class="quantity">
 			                                          <label class="screen-reader-text" for="quantity_{{ $key }}">{{ $cart['name'] }}</label>
-			                                          <input type="number" id="quantity_{{ $key }}" class="input-text qty text" step="1" min="0" max="" name="qty[]" value="1" title="Qty" size="4" inputmode="numeric">
+			                                          <input type="number" id="quantity_{{ $key }}" class="input-text qty text" step="1" min="0" max="" name="qty[]" value="{{ $cart['quantity'] }}" title="Qty" size="4" inputmode="numeric">
 			                                       </div>
 			                                    </td>
 			                                    <td class="product-subtotal" data-title="Total">
