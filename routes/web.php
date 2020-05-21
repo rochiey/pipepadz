@@ -65,4 +65,6 @@ Route::get('shop/product-category/uncategorized', function () {
 });
 Route::get('shop/{product}', 'ProductController@checkProduct');
 
-Route::get('/cartcount', 'ProductController@checkCartContent');
+Route::get('/cart', function () {
+    return view('front.cart');
+});
