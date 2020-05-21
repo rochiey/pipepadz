@@ -61,6 +61,8 @@ jQuery(document).ready(function($) {
 		location.href = link;
 		return false;
 	});
-
+	$('[name^=qty').on('change keypress keyrelease', function(){
+		$('[name=update_cart]').removeAttr('disabled');
+	});
 
 });

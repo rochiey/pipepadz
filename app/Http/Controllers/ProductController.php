@@ -129,11 +129,55 @@ class ProductController extends Controller
     		if($request->session()->has('cart'))
     		{
     			$cart = $request->session()->get('cart');
+    			$cart_total = $request->session()->get('cart_total');
+
+    			//get subtotal first to use it
+    			$product_subtotal = (float) $cart[$_GET['remove_item']]['subtotal'];
+    			$cart_total -= $product_subtotal;
+
+    			//remove from array because the subtotal has been deducted.
     			unset($cart[$_GET['remove_item']]);
+
+    			//set back cart total again
+    			$request->session()->put('cart_total', $cart_total);
+    			$request->session()->put('cart', $cart);
 
     			return redirect()->back();
     		}
     	}
     	else return view('front.cart');
+    }
+    public function updateQty(Request $request)
+    {
+    	$data = $request->all();
+    	foreach ($data['qty'] as $key => $value) {
+    		if($value != 0)
+    		{
+    			if($request->session()->has('cart'))
+	    		{
+	    			$this->changePriceAccordingToQty($request, $key, $value);
+	    		}
+    		}
+    	}
+    	return redirect()->back();
+    }
+    private function changePriceAccordingToQty($request, $product_id, $quantity_to_add)
+    {
+    	$cart = $request->session()->get('cart');
+		$cart_total = $request->session()->get('cart_total');
+
+		//get subtotal first to use it
+		$product_subtotal = (float) $cart[$product_id]['subtotal'];
+		$cart_total -= $product_subtotal;
+
+		//set back cart total again
+		$cart[$product_id]['quantity'] = $quantity_to_add;
+		$price = (float) $cart[$product_id]['price'];
+		$new_subtotal = $price*$quantity_to_add;
+		$cart[$product_id]['subtotal'] = $new_subtotal;
+
+		$cart_total += $new_subtotal;
+		$request->session()->put('cart_total', $cart_total);
+		$request->session()->put('cart', $cart);
     }
 }

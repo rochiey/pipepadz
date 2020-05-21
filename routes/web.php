@@ -70,3 +70,4 @@ Route::get('/asd', function(){
 });
 
 Route::get('/cart', 'ProductController@setCart');
+Route::post('/cart', 'ProductController@updateQty');

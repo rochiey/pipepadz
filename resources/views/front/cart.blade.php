@@ -12,6 +12,7 @@
                         <div class="woocommerce-notices-wrapper"></div>
                         @if(Session::has('cart'))
 	                        <form class="woocommerce-cart-form" action="{{ url('/') }}/cart/" method="post">
+	                        	@csrf
 	                           <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 	                              <thead>
 	                                 <tr>
@@ -41,7 +42,7 @@
 			                                    <td class="product-quantity" data-title="Quantity">
 			                                       <div class="quantity">
 			                                          <label class="screen-reader-text" for="quantity_{{ $key }}">{{ $cart['name'] }}</label>
-			                                          <input type="number" id="quantity_{{ $key }}" class="input-text qty text" step="1" min="0" max="" name="qty[]" value="{{ $cart['quantity'] }}" title="Qty" size="4" inputmode="numeric">
+			                                          <input type="number" id="quantity_{{ $key }}" class="input-text qty text" step="1" min="0" max="" name="qty[{{ $key }}]" value="{{ $cart['quantity'] }}" title="Qty" size="4" inputmode="numeric">
 			                                       </div>
 			                                    </td>
 			                                    <td class="product-subtotal" data-title="Total">
