@@ -72,3 +72,4 @@ Route::get('/checkout', function(){
     if(Session::has('cart')) return view('front.checkout');
     else return redirect('/cart');
 });
+Route::post('/checkout', 'ProductController@placeOrder');

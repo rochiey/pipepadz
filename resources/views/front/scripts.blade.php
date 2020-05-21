@@ -6,6 +6,7 @@
 </script>
 <link rel='stylesheet' id='soliloquy-lite-style-css'  href='{{ asset("css/soliloquy.css") }}' type='text/css' media='all' />
 <link rel='stylesheet' id='soliloquy-liteclassic-theme-css'  href='{{ asset("css/soliloquy-style.css") }}' type='text/css' media='all' />
+<script src="https://js.stripe.com/v3/"></script>
 <script type='text/javascript' src='{{ asset("js/q-a-plus.js") }}'></script>
 <script type='text/javascript' src='{{ asset("js/primathemes.js") }}'></script>
 <script type='text/javascript' src='{{ asset("js/js.cookie.min.js") }}'></script>

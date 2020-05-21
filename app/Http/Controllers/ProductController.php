@@ -180,4 +180,9 @@ class ProductController extends Controller
 		$request->session()->put('cart_total', $cart_total);
 		$request->session()->put('cart', $cart);
     }
+    public function placeOrder(Request $request)
+    {
+    	$data[] = $request->all();
+    	dd($data);
+    }
 }

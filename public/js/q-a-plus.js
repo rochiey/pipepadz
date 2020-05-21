@@ -77,5 +77,63 @@ jQuery(document).ready(function($) {
 		}
 		else $('.shipping_address').attr('style','display:none');
 	});
+	//=======================STRIPE========================
+
+	var stripe = Stripe(window.Laravel.stripeKey);
+	var style = {
+	  base: {
+	    // Add your base input styles here. For example:
+	    fontSize: '16px',
+	    color: '#32325d',
+	  },
+	};
+	var elements = stripe.elements({
+	    fonts: [
+	      {
+	        cssSrc: 'https://fonts.googleapis.com/css?family=Roboto',
+	      },
+	    ],
+	    // Stripe's examples are localized to specific languages, but if
+	    // you wish to have Elements automatically detect your user's locale,
+	    // use `locale: 'auto'` instead.
+	    locale: window.__exampleLocale,
+
+
+  	});
+
+	var card = elements.create('card',{
+		style: style, 
+		hidePostalCode: true,
+		value:{
+
+		},
+
+	});
+	card.mount('#card-element');
+
+	$('#checkout_form').on('submit', function(e){
+		if(!$('[name=stripeToken]').length)
+		{
+			e.preventDefault();
+			stripe.createToken(card).then(function(result) {
+		    	if (result.error) {
+			      	// Inform the customer that there was an error.
+			      	swal('Error!',result.error.message+'. Please try again later.', 'error');
+			    } else {
+			      	// Send the token to your server.
+			      	var form = document.getElementById('checkout_form');
+				  	var hiddenInput = document.createElement('input');
+				  	hiddenInput.setAttribute('type', 'hidden');
+				  	hiddenInput.setAttribute('name', 'stripeToken');
+				  	hiddenInput.setAttribute('value', result.token.id);
+
+				  	form.appendChild(hiddenInput);
+				  	$('#btnPlaceOrder').trigger('click');
+			    }
+		  	});
+		}
+		// else $(this).submit();
+
+	});
 
 });

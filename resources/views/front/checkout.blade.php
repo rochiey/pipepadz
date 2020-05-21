@@ -21,7 +21,8 @@
                            <div class="clear"></div>
                         </form>
                         <div class="woocommerce-notices-wrapper"></div>
-                        <form name="checkout" method="post" class="checkout woocommerce-checkout" action="{{ url('/') }}/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+                        <form name="checkout" id="checkout_form" method="post" class="checkout woocommerce-checkout" action="{{ url('/') }}/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+                        	@csrf
                            <div class="col2-set" id="customer_details">
                               <div class="col-1">
                                  <div class="woocommerce-billing-fields">
@@ -47,7 +48,7 @@
                                           <label for="billing_state" class="">State&nbsp;<abbr class="required" title="required">*</abbr></label>
                                           <span class="woocommerce-input-wrapper">
                                              <input type="text" class="input-text " name="billing_state" id="billing_state" placeholder="" value="" autocomplete="given-state">
-                                             <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select an option…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                             <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                           </span>
                                        </p>
                                        <p class="form-row form-row-wide address-field validate-required validate-postcode" id="billing_postcode_field" data-priority="90"><label for="billing_postcode" class="">ZIP&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code"></span></p>
@@ -85,7 +86,7 @@
                                              <label for="shipping_state" class="">State&nbsp;<abbr class="required" title="required">*</abbr></label>
                                              <span class="woocommerce-input-wrapper">
                                                 <input type="text" class="input-text " name="shipping_state" id="shipping_state" placeholder="" value="" autocomplete="given-state">
-                                                <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-shipping_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select an option…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-shipping_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                              </span>
                                           </p>
                                           <p class="form-row form-row-wide address-field validate-required validate-postcode" id="shipping_postcode_field" data-priority="90"><label for="shipping_postcode" class="">ZIP&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="shipping_postcode" id="shipping_postcode" placeholder="" value="" autocomplete="postal-code"></span></p>
@@ -140,7 +141,16 @@
                                     </tr>
                                  </tfoot>
                               </table>
-                              <button type="submit" class="button alt">Place Order</button>
+                             	 <h3 id="order_review_heading">Payment</h3>
+                              	<div id="payment" class="woocommerce-checkout-payment">
+                              		<br>
+                              		<div id="card-element">
+					       				
+							    	</div>
+							    	<br>
+                              	</div>
+                              	<br>
+                              <button type="submit" id="btnPlaceOrder" class="button alt">Place Order</button>
                         </form>
                      </div>
                   </div>
