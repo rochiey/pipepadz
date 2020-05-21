@@ -68,17 +68,17 @@
 	                                 <tbody>
 	                                    <tr class="cart-subtotal">
 	                                       <th>Subtotal</th>
-	                                       <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>9.99</span></td>
+	                                       <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ Session::get('cart_total') }}</span></td>
 	                                    </tr>
 	                                    <tr class="woocommerce-shipping-totals shipping">
 	                                       <th>Shipping</th>
 	                                       <td data-title="Shipping">
-	                                          Enter your address to view shipping options.
+	                                          $10 for international shipping.
 	                                       </td>
 	                                    </tr>
 	                                    <tr class="order-total">
 	                                       <th>Total</th>
-	                                       <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>9.99</span></strong> </td>
+	                                       <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ Session::get('cart_total')+10 }}</span></strong> </td>
 	                                    </tr>
 	                                 </tbody>
 	                              </table>

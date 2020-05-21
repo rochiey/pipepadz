@@ -19,7 +19,7 @@ class ProductController extends Controller
 		        case '1':
 		        	if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Nautical Star', 'price' => 7.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 7.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Nautical Star','url' => url('/shop/nautical-star'),'img' => asset('img/PipePadz-Star-Hookah-Water-Pipe-Protection2-150x150.jpg'), 'price' => 7.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 7.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+7.99);
 		        	}
 		        	else{
@@ -30,7 +30,7 @@ class ProductController extends Controller
 		        case '2':
 		           	if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Lime', 'price' => 7.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 7.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Lime','url' => url('/shop/lime'), 'img' => asset('img/Sticky-Lime-Pipe-Protection-150x150.jpg'), 'price' => 7.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 7.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+7.99);
 		        	}
 		        	else {
@@ -41,7 +41,7 @@ class ProductController extends Controller
 		        case '3':
 		            if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Squares', 'price' => 9.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 9.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Squares','url' => url('/shop/squares'), 'img' => asset('img/PipePadz-Squares-Hookah-Water-Pipe-Protection2-150x149.jpg'), 'price' => 9.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 9.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+9.99);
 		        	}
 		        	else {
@@ -52,7 +52,7 @@ class ProductController extends Controller
 		        case '4':
 		            if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Rasta Peace', 'price' => 9.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 9.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Rasta Peace','url' => url('/shop/rasta-peace'), 'img' => asset('img/Rasta-Peace-PipePad-Water-Pipe-Protection-e1365559801450-150x149.jpg'), 'price' => 9.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 9.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+9.99);
 		        	}
 		        	else {
@@ -63,7 +63,7 @@ class ProductController extends Controller
 		        case '5':
 		            if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Eyeball', 'price' => 11.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 11.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Eyeball','url' => url('/shop/eyeball'), 'img' => asset('img/PipePadz-Eyeball-Bong-Protection--150x150.png'), 'price' => 11.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 11.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+11.99);
 		        	}
 		        	else {
@@ -74,7 +74,7 @@ class ProductController extends Controller
 		        case '6':
 		            if(isset($cart[$_GET['add-to-cart']])){
 		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
-		        		$cart[$_GET['add-to-cart']] = ['name' => 'Spiral', 'price' => 11.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 11.99*($sub_cart_quantity+1)];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Spiral','url' => url('/shop/spiral'), 'img' => asset('img/Downward-Spiral-Hookah-and-Water-Pipe-Protection2-150x149.jpg'), 'price' => 11.99, 'quantity' => $sub_cart_quantity+1, 'subtotal' => 11.99*($sub_cart_quantity+1)];
 		        		$request->session()->put('cart_total', $cart_total+11.99);
 		        	}
 		        	else {

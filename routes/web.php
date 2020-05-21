@@ -65,4 +65,8 @@ Route::get('shop/product-category/uncategorized', function () {
 });
 Route::get('shop/{product}', 'ProductController@checkProduct');
 
+Route::get('/asd', function(){
+    return json_encode(Session::get('cart'));
+});
+
 Route::get('/cart', 'ProductController@setCart');

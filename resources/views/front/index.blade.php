@@ -23,7 +23,7 @@
 		@yield('after_scripts')
 
 		@if(Session::has('add_to_cart_success'))
-			<script type="text/javascript">swal('Added!','{{ Session::get("message") }}','success');</script>
+			<script type="text/javascript">swal('Added!','{{ Session::get("add_to_cart_success") }}','success');</script>
 		@endif
 	</body>
 

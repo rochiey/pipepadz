@@ -6,9 +6,9 @@
                 <ul id="topnavmenu" class="topnavmenu">
                     <li id="menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="{{ url('/') }}/my-account/"><span class="meta-nav">&rarr; </span>My Account</a></li>
                     <li id="basketlink">
-                        <a class="basket" href="{{ url('/') }}/cart/">Your Basket ({{ count(Session::get('cart')) }})</a>
+                        <a class="basket" href="{{ url('/') }}/cart/">Your Basket (<?php if(Session::has('cart')) echo count(Session::get('cart')); else echo 0; ?>)</a>
                         <div id="minicart">
-                            <h4 class="minicart-cartcount"><strong>{{ count(Session::get('cart')) }}</strong> items <a class="right" href="{{ url('/') }}/cart/">View Cart &rarr;</a></h4>
+                            <h4 class="minicart-cartcount"><strong><?php if(Session::has('cart')) echo count(Session::get('cart')); else echo 0; ?></strong> items <a class="right" href="{{ url('/') }}/cart/">View Cart &rarr;</a></h4>
                             <div class="widget_shopping_cart">
                                 <div class="widget_shopping_cart_content"></div>
                             </div>
