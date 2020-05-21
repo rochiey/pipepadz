@@ -64,5 +64,18 @@ jQuery(document).ready(function($) {
 	$('[name^=qty').on('change keypress keyrelease', function(){
 		$('[name=update_cart]').removeAttr('disabled');
 	});
+	if($('#ship-to-different-address-checkbox').is(':checked'))
+	{
+		$('.shipping_address').attr('style','display:block');
+	}
+	else $('.shipping_address').attr('style','display:none');
+
+	$('#ship-to-different-address-checkbox').on('click', function() {
+		if($('#ship-to-different-address-checkbox').is(':checked'))
+		{
+			$('.shipping_address').attr('style','display:block');
+		}
+		else $('.shipping_address').attr('style','display:none');
+	});
 
 });
