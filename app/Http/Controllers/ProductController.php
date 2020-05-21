@@ -38,6 +38,7 @@ class ProductController extends Controller
 		            break;
 		    }
 		    $request->session()->put('cart', $cart);
+		    $request->session()->flash('add_to_cart_success', 'Product added to cart.'); 
 		    return redirect()->back();
 		}
 		else
