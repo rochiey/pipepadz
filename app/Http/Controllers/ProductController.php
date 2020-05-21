@@ -121,4 +121,18 @@ class ProductController extends Controller
     {
     	return json_encode($request->session()->get('cart'));
     }
+    public function setCart(Request $request)
+    {
+    	if(isset($_GET['remove_item']))
+    	{
+    		if($request->session()->has('cart'))
+    		{
+    			$cart = $request->session()->get('cart');
+    			unset($cart[$_GET['remove_item']]);
+
+    			return redirect()->back();
+    		}
+    	}
+    	else return view('front.cart');
+    }
 }
