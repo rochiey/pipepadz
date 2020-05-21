@@ -27,7 +27,7 @@
                                  <div class="woocommerce-billing-fields">
                                     <h3>Billing details</h3>
                                     <div class="woocommerce-billing-fields__field-wrapper">
-                                       <p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10"><label for="billing_first_name" class="">First name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></span></p>
+                                       <p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10"><label for="billing_first_name" class="">First name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p>
                                        <p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20"><label for="billing_last_name" class="">Last name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p>
                                        <p class="form-row form-row-wide" id="billing_company_field" data-priority="30"><label for="billing_company" class="">Company name&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p>
                                        <p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40">
@@ -46,63 +46,7 @@
                                        <p class="form-row form-row-wide address-field validate-required validate-state" id="billing_state_field" data-priority="80">
                                           <label for="billing_state" class="">State&nbsp;<abbr class="required" title="required">*</abbr></label>
                                           <span class="woocommerce-input-wrapper">
-                                             <select name="billing_state" id="billing_state" class="state_select  select2-hidden-accessible" autocomplete="address-level1" data-placeholder="Select an option…" tabindex="-1" aria-hidden="true">
-                                                <option value="">Select an option…</option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="AK">Alaska</option>
-                                                <option value="AZ">Arizona</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="CA">California</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="DC">District Of Columbia</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="HI">Hawaii</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WA">Washington</option>
-                                                <option value="WV">West Virginia</option>
-                                                <option value="WI">Wisconsin</option>
-                                                <option value="WY">Wyoming</option>
-                                                <option value="AA">Armed Forces (AA)</option>
-                                                <option value="AE">Armed Forces (AE)</option>
-                                                <option value="AP">Armed Forces (AP)</option>
-                                             </select>
+                                             <input type="text" class="input-text " name="billing_state" id="billing_state" placeholder="" value="" autocomplete="given-state">
                                              <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select an option…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                           </span>
                                        </p>
@@ -140,63 +84,7 @@
                                           <p class="form-row form-row-wide address-field validate-required validate-state" id="shipping_state_field" data-priority="80">
                                              <label for="shipping_state" class="">State&nbsp;<abbr class="required" title="required">*</abbr></label>
                                              <span class="woocommerce-input-wrapper">
-                                                <select name="shipping_state" id="shipping_state" class="state_select  select2-hidden-accessible" autocomplete="address-level1" data-placeholder="Select an option…" tabindex="-1" aria-hidden="true">
-                                                   <option value="">Select an option…</option>
-                                                   <option value="AL">Alabama</option>
-                                                   <option value="AK">Alaska</option>
-                                                   <option value="AZ">Arizona</option>
-                                                   <option value="AR">Arkansas</option>
-                                                   <option value="CA">California</option>
-                                                   <option value="CO">Colorado</option>
-                                                   <option value="CT">Connecticut</option>
-                                                   <option value="DE">Delaware</option>
-                                                   <option value="DC">District Of Columbia</option>
-                                                   <option value="FL">Florida</option>
-                                                   <option value="GA">Georgia</option>
-                                                   <option value="HI">Hawaii</option>
-                                                   <option value="ID">Idaho</option>
-                                                   <option value="IL">Illinois</option>
-                                                   <option value="IN">Indiana</option>
-                                                   <option value="IA">Iowa</option>
-                                                   <option value="KS">Kansas</option>
-                                                   <option value="KY">Kentucky</option>
-                                                   <option value="LA">Louisiana</option>
-                                                   <option value="ME">Maine</option>
-                                                   <option value="MD">Maryland</option>
-                                                   <option value="MA">Massachusetts</option>
-                                                   <option value="MI">Michigan</option>
-                                                   <option value="MN">Minnesota</option>
-                                                   <option value="MS">Mississippi</option>
-                                                   <option value="MO">Missouri</option>
-                                                   <option value="MT">Montana</option>
-                                                   <option value="NE">Nebraska</option>
-                                                   <option value="NV">Nevada</option>
-                                                   <option value="NH">New Hampshire</option>
-                                                   <option value="NJ">New Jersey</option>
-                                                   <option value="NM">New Mexico</option>
-                                                   <option value="NY">New York</option>
-                                                   <option value="NC">North Carolina</option>
-                                                   <option value="ND">North Dakota</option>
-                                                   <option value="OH">Ohio</option>
-                                                   <option value="OK">Oklahoma</option>
-                                                   <option value="OR">Oregon</option>
-                                                   <option value="PA">Pennsylvania</option>
-                                                   <option value="RI">Rhode Island</option>
-                                                   <option value="SC">South Carolina</option>
-                                                   <option value="SD">South Dakota</option>
-                                                   <option value="TN">Tennessee</option>
-                                                   <option value="TX">Texas</option>
-                                                   <option value="UT">Utah</option>
-                                                   <option value="VT">Vermont</option>
-                                                   <option value="VA">Virginia</option>
-                                                   <option value="WA">Washington</option>
-                                                   <option value="WV">West Virginia</option>
-                                                   <option value="WI">Wisconsin</option>
-                                                   <option value="WY">Wyoming</option>
-                                                   <option value="AA">Armed Forces (AA)</option>
-                                                   <option value="AE">Armed Forces (AE)</option>
-                                                   <option value="AP">Armed Forces (AP)</option>
-                                                </select>
+                                                <input type="text" class="input-text " name="shipping_state" id="shipping_state" placeholder="" value="" autocomplete="given-state">
                                                 <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-shipping_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select an option…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                              </span>
                                           </p>
@@ -221,161 +109,38 @@
                                     </tr>
                                  </thead>
                                  <tbody>
-                                    <tr class="cart_item">
-                                       <td class="product-name">
-                                          NAUTICAL STAR | 3"&nbsp;							 <strong class="product-quantity">× 1</strong>													
-                                       </td>
-                                       <td class="product-total">
-                                          <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7.99</span>						
-                                       </td>
-                                    </tr>
-                                    <tr class="cart_item">
-                                       <td class="product-name">
-                                          LIME | 3"&nbsp;							 <strong class="product-quantity">× 1</strong>													
-                                       </td>
-                                       <td class="product-total">
-                                          <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7.99</span>						
-                                       </td>
-                                    </tr>
-                                    <tr class="cart_item">
-                                       <td class="product-name">
-                                          SPIRAL | 4.5"&nbsp;							 <strong class="product-quantity">× 1</strong>													
-                                       </td>
-                                       <td class="product-total">
-                                          <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>11.99</span>						
-                                       </td>
-                                    </tr>
+                                 	@if(Session::has('cart'))
+                                 		@foreach(Session::get('cart') as $key => $value)
+                                 			<tr class="cart_item">
+		                                       <td class="product-name">
+		                                          	{{ $value['name'] }}<strong class="product-quantity"> × {{ $value['quantity'] }}</strong>													
+		                                       </td>
+		                                       	<td class="product-total">
+	                                         	 	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ $value['subtotal'] }}</span>						
+		                                       	</td>
+		                                    </tr>
+                                 		@endforeach
+                                 	@endif
+                                    
                                  </tbody>
                                  <tfoot>
                                     <tr class="cart-subtotal">
                                        <th>Subtotal</th>
-                                       <td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>27.97</span></td>
+                                       <td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ Session::get('cart_total') }}</span></td>
                                     </tr>
                                     <tr class="woocommerce-shipping-totals shipping">
                                        <th>Shipping</th>
                                        <td data-title="Shipping">
-                                          Enter your address to view shipping options.
+                                          $10 for International Shipping.
                                        </td>
                                     </tr>
                                     <tr class="order-total">
                                        <th>Total</th>
-                                       <td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>27.97</span></strong> </td>
+                                       <td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ Session::get('cart_total')+10 }}</span></strong> </td>
                                     </tr>
                                  </tfoot>
                               </table>
-                              <div id="payment" class="woocommerce-checkout-payment">
-                                 <ul class="wc_payment_methods payment_methods methods">
-                                    <li class="wc_payment_method payment_method_stripe">
-                                       <input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" checked="checked" data-order_button_text="">
-                                       <label for="payment_method_stripe">
-                                       Credit Card <img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" class="stripe-visa-icon stripe-icon" alt="Visa"><img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" class="stripe-amex-icon stripe-icon" alt="American Express"><img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" class="stripe-mastercard-icon stripe-icon" alt="Mastercard"><img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/discover.svg" class="stripe-discover-icon stripe-icon" alt="Discover"><img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg" class="stripe-jcb-icon stripe-icon" alt="JCB"><img src="{{ url('/') }}/wp-content/plugins/woocommerce-gateway-stripe/assets/images/diners.svg" class="stripe-diners-icon stripe-icon" alt="Diners">	</label>
-                                       <div class="payment_box payment_method_stripe">
-                                          <div id="stripe-payment-data" data-email="pvmediocre@gmail.com" data-full-name=" " data-currency="usd">
-                                             <fieldset id="wc-stripe-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
-                                                <div class="form-row form-row-wide">
-                                                   <label for="stripe-card-element">Card Number <span class="required">*</span></label>
-                                                   <div class="stripe-card-group">
-                                                      <div id="stripe-card-element" class="wc-stripe-elements-field StripeElement empty">
-                                                         <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame6" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-1fc23f9347df058ee8f7c8e5edaf73f0.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Urr1dtCCpjU0PsIj49rOL8D9&amp;origin=https%3A%2F%2Fpipepadz.com&amp;referrer=https%3A%2F%2Fpipepadz.com%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
-                                                      </div>
-                                                      <i class="stripe-credit-card-brand stripe-card-brand" alt="Credit Card"></i>
-                                                   </div>
-                                                </div>
-                                                <div class="form-row form-row-first">
-                                                   <label for="stripe-exp-element">Expiry Date <span class="required">*</span></label>
-                                                   <div id="stripe-exp-element" class="wc-stripe-elements-field StripeElement empty">
-                                                      <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame7" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-1fc23f9347df058ee8f7c8e5edaf73f0.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardExpiry&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Urr1dtCCpjU0PsIj49rOL8D9&amp;origin=https%3A%2F%2Fpipepadz.com&amp;referrer=https%3A%2F%2Fpipepadz.com%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
-                                                   </div>
-                                                </div>
-                                                <div class="form-row form-row-last">
-                                                   <label for="stripe-cvc-element">Card Code (CVC) <span class="required">*</span></label>
-                                                   <div id="stripe-cvc-element" class="wc-stripe-elements-field StripeElement empty">
-                                                      <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame8" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-1fc23f9347df058ee8f7c8e5edaf73f0.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardCvc&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Urr1dtCCpjU0PsIj49rOL8D9&amp;origin=https%3A%2F%2Fpipepadz.com&amp;referrer=https%3A%2F%2Fpipepadz.com%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
-                                                   </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                                <!-- Used to display form errors -->
-                                                <div class="stripe-source-errors" role="alert"></div>
-                                                <br>
-                                                <div class="clear"></div>
-                                             </fieldset>
-                                          </div>
-                                       </div>
-                                    </li>
-                                    <li class="wc_payment_method payment_method_paypal">
-                                       <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" data-order_button_text="Proceed to PayPal">
-                                       <label for="payment_method_paypal">
-                                       PayPal <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" alt="PayPal acceptance mark"><a href="https://www.paypal.com/us/webapps/mpp/paypal-popup" class="about_paypal" onclick="javascript:window.open('https://www.paypal.com/us/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">What is PayPal?</a>	</label>
-                                    </li>
-                                 </ul>
-                                 <div class="form-row place-order">
-                                    <noscript>
-                                       Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Update totals">Update totals</button>
-                                    </noscript>
-                                    <div class="woocommerce-terms-and-conditions-wrapper">
-                                       <div class="woocommerce-privacy-policy-text"></div>
-                                       <div class="woocommerce-terms-and-conditions" style="display: none; max-height: 200px; overflow: auto;">
-                                          <table style="width: 80%" border="0" align="left">
-                                             <tbody>
-                                                <tr>
-                                                   <td>
-                                                      <strong>What information do we collect?</strong>We collect information from you when you register on our site, place an order or subscribe to our newsletter.When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, mailing address, phone number or credit card information. You may, however, visit our site anonymously.
-                                                      <p></p>
-                                                      <div>
-                                                         <p><strong>What do we use your information for?</strong></p>
-                                                         <p>Any of the information we collect from you may be used in one of the following ways:</p>
-                                                         <p>To personalize your experience<br>
-                                                            (your information helps us to better respond to your individual needs)
-                                                         </p>
-                                                         <p>To improve our website<br>
-                                                            (we continually strive to improve our website offerings based on the information and feedback we receive from you)
-                                                         </p>
-                                                         <p>To process transactions</p>
-                                                         <blockquote>
-                                                            <p>Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent, other than for the express purpose of delivering the purchased product or service requested.</p>
-                                                         </blockquote>
-                                                         <p>To administer a contest, promotion, survey or other site feature</p>
-                                                         <p>To send periodic emails</p>
-                                                         <blockquote>
-                                                            <p>The email address you provide for order processing, may be used to send you information and updates pertaining to your order, in addition to receiving occasional company news, updates, related product or service information, etc.</p>
-                                                         </blockquote>
-                                                         <p>Note: If at any time you would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.</p>
-                                                         <p><strong>How do we protect your information?</strong></p>
-                                                         <p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information.</p>
-                                                         <p>We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our Payment gateway providers database only to be accessible by those authorized with special access rights to such systems, and are required to?keep the information confidential.</p>
-                                                         <p>After a transaction, your private information (credit cards, social security numbers, financials, etc.) will not be stored on our servers.</p>
-                                                         <p><strong>Do we disclose any information to outside parties?</strong>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.</p>
-                                                         <p><strong>Third party links</strong></p>
-                                                         <p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>
-                                                         <p><strong>Your Consent</strong></p>
-                                                         <p>By using our site, you consent to our web site privacy policy.</p>
-                                                         <p><strong>Changes to our Privacy Policy</strong></p>
-                                                         <p>If we decide to change our privacy policy, we will post those changes on this page, and/or update the Privacy Policy modification date below.</p>
-                                                         <p>This policy was last modified on 7/19/2012</p>
-                                                         <p><strong>Contacting Us</strong></p>
-                                                         <p>If there are any questions regarding this privacy policy you may contact us using the <a href="{{ url('/') }}/contact-us/">contact form</a> or the information below.</p>
-                                                         <p>www.pipepadz.com<br>
-                                                            info@pipepadz.com
-                                                         </p>
-                                                      </div>
-                                                   </td>
-                                                </tr>
-                                             </tbody>
-                                          </table>
-                                       </div>
-                                       <p class="form-row validate-required">
-                                          <label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-                                          <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms">
-                                          <span class="woocommerce-terms-and-conditions-checkbox-text">I have read and agree to the website <a href="{{ url('/') }}/privacy-policy/" class="woocommerce-terms-and-conditions-link" target="_blank">terms and conditions</a></span>&nbsp;<span class="required">*</span>
-                                          </label>
-                                          <input type="hidden" name="terms-field" value="1">
-                                       </p>
-                                    </div>
-                                    <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
-                                    <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="ec1af23589"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">	
-                                 </div>
-                              </div>
-                           </div>
+                              <button type="submit" class="button alt">Place Order</button>
                         </form>
                      </div>
                   </div>

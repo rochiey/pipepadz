@@ -69,5 +69,6 @@ Route::get('/cart', 'ProductController@setCart');
 Route::post('/cart', 'ProductController@updateQty');
 
 Route::get('/checkout', function(){
-    return view('front.checkout');
+    if(Session::has('cart')) return view('front.checkout');
+    else return redirect('/cart');
 });
