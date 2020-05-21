@@ -16,22 +16,46 @@ class ProductController extends Controller
 			}
 		    switch ($_GET['add-to-cart']) {
 		        case '1':
-		            $cart[$_GET['add-to-cart']] = ['name' => 'Nautical Star', 'price' => '7.99', 'quantity' => 1];
+		        	if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Nautical Star', 'price' => '7.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Nautical Star', 'price' => '7.99', 'quantity' => 1];
 		            break;
 		        case '2':
-		           $cart[$_GET['add-to-cart']] = ['name' => 'Lime', 'price' => '7.99', 'quantity' => 1];
+		           	if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Lime', 'price' => '7.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Lime', 'price' => '7.99', 'quantity' => 1];
 		            break;
 		        case '3':
-		            $cart[$_GET['add-to-cart']] = ['name' => 'Squares', 'price' => '9.99', 'quantity' => 1];
+		            if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Squares', 'price' => '9.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Squares', 'price' => '9.99', 'quantity' => 1];
 		            break;
 		        case '4':
-		            $cart[$_GET['add-to-cart']] = ['name' => 'Rasta Peace', 'price' => '9.99', 'quantity' => 1];
+		            if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Rasta Peace', 'price' => '9.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Rasta Peace', 'price' => '9.99', 'quantity' => 1];
 		            break;
 		        case '5':
-		            $cart[$_GET['add-to-cart']] = ['name' => 'Eyeball', 'price' => '11.99', 'quantity' => 1];
+		            if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Eyeball', 'price' => '11.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Eyeball', 'price' => '11.99', 'quantity' => 1];
 		            break;
 		        case '6':
-		            $cart[$_GET['add-to-cart']] = ['name' => 'Spiral', 'price' => '11.99', 'quantity' => 1];
+		            if(isset($cart[$_GET['add-to-cart']])){
+		        		$sub_cart_quantity = $cart[$_GET['add-to-cart']]['quantity'];
+		        		$cart[$_GET['add-to-cart']] = ['name' => 'Spiral', 'price' => '11.99', 'quantity' => $sub_cart_quantity+1];
+		        	}
+		        	else $cart[$_GET['add-to-cart']] = ['name' => 'Spiral', 'price' => '11.99', 'quantity' => 1];
 		            break;
 		        
 		        default:
