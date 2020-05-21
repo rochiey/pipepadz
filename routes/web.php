@@ -12,35 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-if(isset($_GET['add-to-cart']))
-{
-    $cart = \Request::session()->get('cart');
-    switch ($_GET['add-to-cart']) {
-        case '1':
-            $cart[] = ['name' => 'Nautical Star', 'price' => '7.99'];
-            break;
-        case '2':
-           $cart[] = ['name' => 'Lime', 'price' => '7.99'];
-            break;
-        case '3':
-            $cart[] = ['name' => 'Squares', 'price' => '9.99'];
-            break;
-        case '4':
-            $cart[] = ['name' => 'Rasta Peace', 'price' => '9.99'];
-            break;
-        case '5':
-            $cart[] = ['name' => 'Eyeball', 'price' => '11.99'];
-            break;
-        case '6':
-            $cart[] = ['name' => 'Spiral', 'price' => '11.99'];
-            break;
-        
-        default:
-            break;
-    }
-    \Request::session()->put('cart', $cart);
-    
-}
+
 
 Route::get('/', function () {
     return view('front.home');
@@ -91,21 +63,6 @@ Route::get('shop/product-category/4', function () {
 Route::get('shop/product-category/uncategorized', function () {
     return view('front.uncategorized');
 });
-Route::get('shop/nautical-star', function () {
-    return view('front.nautical_star');
-});
-Route::get('shop/lime', function () {
-    return view('front.lime');
-});
-Route::get('shop/squares', function () {
-    return view('front.squares');
-});
-Route::get('shop/rasta-peace', function () {
-    return view('front.rasta');
-});
-Route::get('shop/eyeball', function () {
-    return view('front.eyeball');
-});
-Route::get('shop/spiral', function () {
-    return view('front.spiral');
-});
+Route::get('shop/{product}', 'ProductController@checkProduct');
+
+Route::get('/cartcount', 'ProductController@checkCartContent');
