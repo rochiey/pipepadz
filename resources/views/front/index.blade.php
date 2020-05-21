@@ -21,6 +21,10 @@
 		</div>
 		@include('front.scripts')
 		@yield('after_scripts')
+
+		@if(Session::has('add_to_cart_success'))
+			<script type="text/javascript">swal('Added!',{{ Session::get('message') }},'success')</script>
+		@endif
 	</body>
 
 </html>
