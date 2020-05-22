@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Stripe\Stripe;
+use Stripe\Charge;
+use Stripe\Customer;
+
 
 class ProductController extends Controller
 {
@@ -88,7 +92,9 @@ class ProductController extends Controller
 		            break;
 		    }
 		    $request->session()->put('cart', $cart);
-		    $request->session()->flash('add_to_cart_success', 'Product added to cart.'); 
+		    $request->session()->flash('message', 'Product added to cart.'); 
+		    $request->session()->flash('message_title', 'Added!'); 
+		    $request->session()->flash('message_status', 'success'); 
 		    return redirect()->back();
 		}
 		else
@@ -182,7 +188,56 @@ class ProductController extends Controller
     }
     public function placeOrder(Request $request)
     {
-    	$data[] = $request->all();
-    	dd($data);
+    	$data = $request->all();
+    	if(isset($data['stripeToken']))
+        {
+        	//
+            try {
+                Stripe::setApiKey(env('STRIPE_SECRET'));
+
+                $customer = Customer::create(array(
+                    'name' => $data['billing_first_name'].' '.$data['billing_last_name'],
+                    'email' => $data['billing_email'],
+                    'source'  => $request->input('stripeToken')
+                ));
+
+
+                $charge = Charge::create(array(
+                    'customer' => $customer->id,
+                    'amount' => ($request->session()->get('cart_total')+10)*100,
+                    'address' => $data['billing_address_1'].' & '.$data['billing_address_2'],
+                    'currency' => 'usd',
+                    'metadata' => [
+                    	"shipping_first_name" => $data['shipping_first_name'],
+					    "shipping_last_name" => $data['shipping_last_name'],
+					    "shipping_company" => $data['shipping_company'],
+					    "shipping_country" => $data['shipping_country'],
+					    "shipping_address_1" => $data['shipping_address_1'],
+					    "shipping_address_2" => $data['shipping_address_2'],
+					    "shipping_city" => $data['shipping_city'],
+					    "shipping_state" => $data['shipping_state'],
+					    "shipping_postcode" => $data['shipping_postcode'],
+					    "order_comments" => $data['order_comments'],
+                    ]
+                ));
+
+                $request->session()->flash('message', 'Order has been placed!'); 
+			    $request->session()->flash('message_title', 'Thanks!'); 
+			    $request->session()->flash('message_status', 'success'); 
+			    return redirect(url('/'));
+            } catch (\Exception $ex) {
+                $request->session()->flash('message', $ex->getMessage()); 
+			    $request->session()->flash('message_title', 'Error'); 
+			    $request->session()->flash('message_status', 'error'); 
+			    return redirect()->back();
+            }
+        }
+        else
+        {
+        	$request->session()->flash('message', 'Stripe Token not found.'); 
+		    $request->session()->flash('message_title', 'Error'); 
+		    $request->session()->flash('message_status', 'error'); 
+		    return redirect()->back();
+        }
     }
 }

@@ -22,8 +22,8 @@
 		@include('front.scripts')
 		@yield('after_scripts')
 
-		@if(Session::has('add_to_cart_success'))
-			<script type="text/javascript">swal('Added!','{{ Session::get("add_to_cart_success") }}','success');</script>
+		@if(Session::has('message'))
+			<script type="text/javascript">swal('{{ Session::get("message_title") }}','{{ Session::get("message") }}','{{ Session::get("message_status") }}');</script>
 		@endif
 	</body>
 
