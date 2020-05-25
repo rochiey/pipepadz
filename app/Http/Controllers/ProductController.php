@@ -205,7 +205,6 @@ class ProductController extends Controller
                 $charge = Charge::create(array(
                     'customer' => $customer->id,
                     'amount' => ($request->session()->get('cart_total')+10)*100,
-                    'address' => $data['billing_address_1'].' & '.$data['billing_address_2'],
                     'currency' => 'usd',
                     'metadata' => [
                     	"shipping_first_name" => $data['shipping_first_name'],
@@ -220,12 +219,12 @@ class ProductController extends Controller
 					    "order_comments" => $data['order_comments'],
                     ]
                 ));
-
+                $request->session()->flush();
                 $request->session()->flash('message', 'Order has been placed!'); 
 			    $request->session()->flash('message_title', 'Thanks!'); 
 			    $request->session()->flash('message_status', 'success'); 
 
-			    $request->session()->flush();
+			    
 			    return redirect(url('/'));
             } catch (\Exception $ex) {
                 $request->session()->flash('message', $ex->getMessage()); 
