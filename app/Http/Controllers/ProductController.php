@@ -224,6 +224,8 @@ class ProductController extends Controller
                 $request->session()->flash('message', 'Order has been placed!'); 
 			    $request->session()->flash('message_title', 'Thanks!'); 
 			    $request->session()->flash('message_status', 'success'); 
+
+			    $request->session()->flush();
 			    return redirect(url('/'));
             } catch (\Exception $ex) {
                 $request->session()->flash('message', $ex->getMessage()); 
