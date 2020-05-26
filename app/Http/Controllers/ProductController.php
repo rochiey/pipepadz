@@ -232,6 +232,7 @@ class ProductController extends Controller
                 	$order->zip = $data['shipping_postcode'];
                 	$order->phone = $data['billing_phone'];
                 	$order->email = $data['billing_email'];
+                	$order->charge_id = $charge->id;
                 }
                 else
             	{
@@ -243,6 +244,7 @@ class ProductController extends Controller
                 	$order->zip = $data['billing_postcode'];
                 	$order->phone = $data['billing_phone'];
                 	$order->email = $data['billing_email'];
+                	$order->charge_id = $charge->id;
                 }
                 $order->save();
 
