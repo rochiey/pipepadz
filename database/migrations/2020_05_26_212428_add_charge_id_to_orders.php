@@ -15,6 +15,7 @@ class AddChargeIdToOrders extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->string('charge_id');
+            $table->integer('is_refunded')->nullable();
         });
     }
 
