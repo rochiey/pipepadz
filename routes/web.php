@@ -73,3 +73,5 @@ Route::get('/checkout', function(){
     else return redirect('/cart');
 });
 Route::post('/checkout', 'ProductController@placeOrder');
+
+Route::post('/refund', 'ProductController@setRefund');

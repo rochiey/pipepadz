@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
+use Stripe\Refund;
 use Stripe\Customer;
 use App\Models\Orders;
 use DB;
@@ -281,5 +282,18 @@ class ProductController extends Controller
 		    $request->session()->flash('message_status', 'error'); 
 		    return redirect()->back();
         }
+    }
+    public function setRefund(Request $request)
+    {
+    	$data = $request->all();
+
+    	$charge_id = Orders::find($data['id'])->charge_id;
+
+    	Stripe::setApiKey(env('STRIPE_SECRET'));
+    	Refund::create([
+		  	'charge' => $charge_id,
+		]);
+
+		return 1;
     }
 }
