@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
 use Stripe\Customer;
-
+use App\Models\Orders;
+use DB;
 
 class ProductController extends Controller
 {
@@ -207,18 +208,56 @@ class ProductController extends Controller
                     'amount' => ($request->session()->get('cart_total')+10)*100,
                     'currency' => 'usd',
                     'metadata' => [
-                    	"shipping_first_name" => $data['shipping_first_name'],
-					    "shipping_last_name" => $data['shipping_last_name'],
-					    "shipping_company" => $data['shipping_company'],
-					    "shipping_country" => $data['shipping_country'],
-					    "shipping_address_1" => $data['shipping_address_1'],
-					    "shipping_address_2" => $data['shipping_address_2'],
-					    "shipping_city" => $data['shipping_city'],
-					    "shipping_state" => $data['shipping_state'],
-					    "shipping_postcode" => $data['shipping_postcode'],
+                    	"shipping_first_name" => isset($data['shipping_first_name']) ? $data['shipping_first_name'] : $data['billing_first_name'],
+					    "shipping_last_name" => isset($data['shipping_last_name']) ? $data['shipping_last_name'] : $data['billing_last_name'],
+					    "shipping_company" => isset($data['shipping_company']) ? $data['shipping_company'] : $data['billing_company'],
+					    "shipping_country" => isset($data['shipping_country']) ? $data['shipping_country'] : $data['billing_country'],
+					    "shipping_address_1" => isset($data['shipping_address_1']) ? $data['shipping_address_1'] : $data['billing_address_1'],
+					    "shipping_address_2" => isset($data['shipping_address_2']) ? $data['shipping_address_2'] : $data['billing_address_2'],
+					    "shipping_city" => isset($data['shipping_city']) ? $data['shipping_city'] : $data['billing_city'],
+					    "shipping_state" => isset($data['shipping_state']) ? $data['shipping_state'] : $data['billing_state'],
+					    "shipping_postcode" => isset($data['shipping_postcode']) ? $data['shipping_postcode'] : $data['billing_postcode'],
 					    "order_comments" => $data['order_comments'],
                     ]
                 ));
+
+                $order = new Orders;
+                if(isset($data['shipping_first_name']))
+                {
+                	$order->full_name = $data['billing_first_name'].' '.$data['billing_last_name'];
+                	$order->country = $data['billing_country'];
+                	$order->street_address = $data['shipping_address_1'];
+                	$order->city = $data['shipping_city'];
+                	$order->state = $data['shipping_state'];
+                	$order->zip = $data['shipping_postcode'];
+                	$order->phone = $data['billing_phone'];
+                	$order->email = $data['billing_email'];
+                }
+                else
+            	{
+                	$order->full_name = $data['shipping_first_name'].' '.$data['shipping_last_name'];
+                	$order->country = $data['shipping_country'];
+                	$order->street_address = $data['billing_address_1'];
+                	$order->city = $data['billing_city'];
+                	$order->state = $data['billing_state'];
+                	$order->zip = $data['billing_postcode'];
+                	$order->phone = $data['billing_phone'];
+                	$order->email = $data['billing_email'];
+                }
+                $order->save();
+
+                foreach($request->session()->get('cart') as $cart)
+                {
+                	DB::table('orders_has_products')->insert(
+					    [
+					    	'order_id' => $order->id, 
+					    	'product_name' => $cart['name'],
+					    	'quantity' => $cart['quantity'],
+					    	'subtotal' => $cart['subtotal'],
+					    ]
+					);
+                }
+
                 $request->session()->flush();
                 $request->session()->flash('message', 'Order has been placed!'); 
 			    $request->session()->flash('message_title', 'Thanks!'); 
