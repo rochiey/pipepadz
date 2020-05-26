@@ -224,8 +224,8 @@ class ProductController extends Controller
                 $order = new Orders;
                 if(isset($data['shipping_first_name']))
                 {
-                	$order->full_name = $data['billing_first_name'].' '.$data['billing_last_name'];
-                	$order->country = $data['billing_country'];
+                	$order->full_name = $data['shipping_first_name'].' '.$data['shipping_last_name'];
+                	$order->country = $data['shipping_country'];
                 	$order->street_address = $data['shipping_address_1'];
                 	$order->city = $data['shipping_city'];
                 	$order->state = $data['shipping_state'];
@@ -235,8 +235,8 @@ class ProductController extends Controller
                 }
                 else
             	{
-                	$order->full_name = $data['shipping_first_name'].' '.$data['shipping_last_name'];
-                	$order->country = $data['shipping_country'];
+                	$order->full_name = $data['billing_first_name'].' '.$data['billing_last_name'];
+                	$order->country = $data['billing_country'];
                 	$order->street_address = $data['billing_address_1'];
                 	$order->city = $data['billing_city'];
                 	$order->state = $data['billing_state'];
