@@ -73,6 +73,3 @@ Route::get('/checkout', function(){
     else return redirect('/cart');
 });
 Route::post('/checkout', 'ProductController@placeOrder');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
