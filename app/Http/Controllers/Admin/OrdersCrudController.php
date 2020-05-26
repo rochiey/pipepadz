@@ -25,6 +25,7 @@ class OrdersCrudController extends CrudController
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/orders');
         $this->crud->setEntityNameStrings('orders', 'orders');
         $this->crud->addButton('line','refund','view','refundbutton');
+        $this->crud->addClause('where','is_refunded','!=',1);
     }
 
     protected function setupListOperation()

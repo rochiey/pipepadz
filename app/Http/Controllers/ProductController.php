@@ -294,6 +294,10 @@ class ProductController extends Controller
 		  	'charge' => $charge_id,
 		]);
 
+		$order = Orders::find($data['id']);
+		$order->is_refunded = 1;
+		$order->save();
+
 		return 1;
     }
 }
