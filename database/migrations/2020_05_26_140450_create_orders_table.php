@@ -30,7 +30,7 @@ class CreateOrdersTable extends Migration
             $table->integer('order_id');
             $table->string('product_name');
             $table->integer('quantity');
-            $table->integer('subtotal');
+            $table->decimal('subtotal', 12, 2);
             $table->timestamps();
         });
     }
